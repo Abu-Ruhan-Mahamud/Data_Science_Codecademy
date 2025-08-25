@@ -1,3 +1,3 @@
-# Hurricane_Analysis
+# Data Science
 
-project based on the hurricane analysis part of codecademy
+project based on data science path on Codecademy
