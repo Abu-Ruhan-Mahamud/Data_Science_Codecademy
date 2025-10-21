@@ -1,6 +1,5 @@
 #Sampling Distributions Dance Party!
 
-
 from helper_functions import choose_statistic, population_distribution, sampling_distribution
 import numpy as np
 import pandas as pd
