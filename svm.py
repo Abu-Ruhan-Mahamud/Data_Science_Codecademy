@@ -23,9 +23,21 @@ classifier = SVC(kernel='rbf', gamma = 2, C = 1)
 classifier.fit(training_set[['plate_x', 'plate_z']], training_set['type'])
 
 draw_boundary(ax, classifier)
-
+ax.set_ylim(-2, 6)
+ax.set_xlim(-3, 3)
+    
 
 accuracy = classifier.score(validation_set[['plate_x', 'plate_z']], validation_set['type'])
 print("Accuracy:", accuracy)
 plt.show()
 
+print("Aaron Judge:")
+visualize_strike_zone(judge_stats)
+
+# Visualize Jose Altuve's strike zone
+print("Jose Altuve:")
+visualize_strike_zone(altuve_stats)
+
+# Visualize David Ortiz's strike zone
+print("David Ortiz:")
+visualize_strike_zone(ortiz_stats)
